@@ -11,39 +11,46 @@
   <body>
     <div class="wrapper">
       <div class="slider">
-        <div class="slider__image image-first">
-          <img src="assets/images/1.webp" alt="mem" class="image" />
+        <input type="radio" name="radio" id="first" class="radio radio-first" checked="checked" />
+        <input type="radio" name="radio" id="second" class="radio radio-second" />
+        <input type="radio" name="radio" id="third" class="radio radio-third" />
+        <input type="radio" name="radio" id="fourth" class="radio radio-fourth" />
+
+        <div class="slider__images">
+          <div class="slider__image image-first">
+            <img src="assets/images/1.webp" alt="mem" class="image" />
+          </div>
+          <div class="slider__image image-second">
+            <img src="assets/images/2.webp" alt="mem" class="image" />
+          </div>
+          <div class="slider__image image-third">
+            <img src="assets/images/3.webp" alt="mem" class="image" />
+          </div>
+          <div class="slider__image image-fourth">
+            <img src="assets/images/4.webp" alt="mem" class="image" />
+          </div>
         </div>
-        <div class="slider__image image-second">
-          <img src="assets/images/2.webp" alt="mem" class="image" />
+
+        <div class="slider__titles">
+          <div class="slider__title title-first">
+            <span class="title">То, что вы увидите, называется мемы</span>
+          </div>
+          <div class="slider__title title-second">
+            <span class="title">А какие тренды-то? я не шарю</span>
+          </div>
+          <div class="slider__title title-third">
+            <span class="title">Нельзя просто так взять и стать интернет-мемом</span>
+          </div>
+          <div class="slider__title title-fourth">
+            <span class="title">А где живут мемы? Тут.</span>
+          </div>
         </div>
-        <div class="slider__image image-third">
-          <img src="assets/images/3.webp" alt="mem" class="image" />
-        </div>
-        <div class="slider__image image-fourth">
-          <img src="assets/images/4.webp" alt="mem" class="image" />
-        </div>
-        <div class="slider__title title-first">
-          <span class="title">То, что вы увидите, называется мемы</span>
-        </div>
-        <div class="slider__title title-second">
-          <span class="title">А какие тренды-то? я не шарю</span>
-        </div>
-        <div class="slider__title title-third">
-          <span class="title">Нельзя просто так взять и стать интернет-мемом</span>
-        </div>
-        <div class="slider__title title-fourth">
-          <span class="title">А где живут мемы? Тут.</span>
-        </div>
-        <div class="slider__control">
-          <input type="radio" name="radio" id="first" class="radio" checked="checked" />
-          <label for="first" class="control control_first"></label>
-          <input type="radio" name="radio" id="second" class="radio" />
-          <label for="second" class="control control_second"></label>
-          <input type="radio" name="radio" id="third" class="radio" />
-          <label for="third" class="control control_third"></label>
-          <input type="radio" name="radio" id="fourth" class="radio" />
-          <label for="fourth" class="control control_fourth"></label>
+
+        <div class="slider__controls">
+          <label for="first" class="control control-first"></label>
+          <label for="second" class="control control-second"></label>
+          <label for="third" class="control control-third"></label>
+          <label for="fourth" class="control control-fourth"></label>
         </div>
       </div>
     </div>
