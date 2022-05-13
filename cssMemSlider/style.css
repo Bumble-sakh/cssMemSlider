@@ -45,7 +45,9 @@ body {
 .image-third,
 .title-third,
 .image-fourth,
-.title-fourth {
+.title-fourth,
+.image-fifth,
+.title-fifth {
   transition: 2s;
   opacity: 0;
 }
@@ -63,6 +65,10 @@ body {
 }
 
 .radio.radio-fourth:checked ~ .slider__images .image-fourth {
+  opacity: 1;
+}
+
+.radio.radio-fifth:checked ~ .slider__images .image-fifth {
   opacity: 1;
 }
 
@@ -95,6 +101,10 @@ body {
 }
 
 .radio.radio-fourth:checked ~ .slider__titles .title-fourth {
+  opacity: 1;
+}
+
+.radio.radio-fifth:checked ~ .slider__titles .title-fifth {
   opacity: 1;
 }
 
@@ -143,22 +153,36 @@ input.radio {
   border: 0.25rem solid var(--control-color);
 }
 
+.radio.radio-fifth:checked ~ .slider__controls .control-fifth {
+  background-color: var(--main-color);
+  border: 0.25rem solid var(--control-color);
+}
+
 .radio.radio-first:checked ~ .slider__controls .control-first:hover {
   cursor: pointer;
   background-color: var(--main-color);
   border: 0.25rem solid var(--border-color);
 }
+
 .radio.radio-second:checked ~ .slider__controls .control-second:hover {
   cursor: pointer;
   background-color: var(--main-color);
   border: 0.25rem solid var(--border-color);
 }
+
 .radio.radio-third:checked ~ .slider__controls .control-third:hover {
   cursor: pointer;
   background-color: var(--main-color);
   border: 0.25rem solid var(--border-color);
 }
+
 .radio.radio-fourth:checked ~ .slider__controls .control-fourth:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  border: 0.25rem solid var(--border-color);
+}
+
+.radio.radio-fifth:checked ~ .slider__controls .control-fifth:hover {
   cursor: pointer;
   background-color: var(--main-color);
   border: 0.25rem solid var(--border-color);
