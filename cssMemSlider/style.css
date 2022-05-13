@@ -132,13 +132,21 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .control {
   display: block;
+}
+
+.control-first,
+.control-second,
+.control-third,
+.control-fourth,
+.control-fifth {
   width: 1.5rem;
   height: 1.5rem;
+  margin: 0.5rem;
+  box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--control-color);
   border: 0.25rem solid var(--control-color);
@@ -201,12 +209,26 @@ body {
 
 .control:hover {
   cursor: pointer;
+}
+
+.control:hover .control-first,
+.control:hover .control-second,
+.control:hover .control-third,
+.control:hover .control-fourth,
+.control:hover .control-fifth {
   background-color: var(--border-color);
   border-color: var(--border-color);
 }
 
 .control:active {
   cursor: pointer;
+}
+
+.control:active .control-first,
+.control:active .control-second,
+.control:active .control-third,
+.control:active .control-fourth,
+.control:active .control-fifth {
   background-color: var(--active-color);
   border-color: var(--active-color);
 }
