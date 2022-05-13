@@ -30,6 +30,8 @@ body {
 }
 
 .radio {
+  width: 0%;
+  height: 0%;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
 }
@@ -140,11 +142,6 @@ body {
   border-radius: 50%;
   background-color: var(--control-color);
   border: 0.25rem solid var(--control-color);
-}
-
-input.radio {
-  width: 0%;
-  height: 0%;
 }
 
 .radio.radio-first:checked ~ .slider__controls .control-first {
