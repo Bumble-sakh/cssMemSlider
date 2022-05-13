@@ -261,7 +261,11 @@ body {
     justify-content: center;
   }
 
-  .control {
+  .control-first,
+  .control-second,
+  .control-third,
+  .control-fourth,
+  .control-fifth {
     width: 1rem;
     height: 1rem;
     border: 0.15rem solid var(--control-color);
@@ -279,7 +283,11 @@ body {
     grid-row-gap: 0.5rem;
   }
 
-  .control {
+  .control-first,
+  .control-second,
+  .control-third,
+  .control-fourth,
+  .control-fifth {
     width: 0.5rem;
     height: 0.5rem;
     border: 0.05rem solid var(--control-color);
