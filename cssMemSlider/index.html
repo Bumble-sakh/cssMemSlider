@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/icons8-angry-face-meme-96.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS MemSlider</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="slider">
+        <input type="radio" name="radio" id="first" class="radio radio-first" checked="checked" />
+        <input type="radio" name="radio" id="second" class="radio radio-second" />
+        <input type="radio" name="radio" id="third" class="radio radio-third" />
+        <input type="radio" name="radio" id="fourth" class="radio radio-fourth" />
+        <input type="radio" name="radio" id="fifth" class="radio radio-fifth" />
+
+        <div class="slider__images">
+          <img src="assets/images/1.webp" alt="mem" class="image image-first" />
+          <img src="assets/images/2.webp" alt="mem" class="image image-second" />
+          <img src="assets/images/3.webp" alt="mem" class="image image-third" />
+          <img src="assets/images/4.webp" alt="mem" class="image image-fourth" />
+          <img src="assets/images/5.webp" alt="mem" class="image image-fifth" />
+        </div>
+
+        <div class="slider__titles">
+          <span class="title title-first">То, что вы увидите, называется мемы</span>
+          <span class="title title-second">А какие тренды-то? Я не шарю</span>
+          <span class="title title-third">Нельзя просто так взять и стать интернет-мемом</span>
+          <span class="title title-fourth">А где живут мемы? Тут</span>
+          <span class="title title-fifth">Ставь 150</span>
+        </div>
+
+        <div class="slider__controls">
+          <label for="first" class="control">
+            <div class="control-first"></div>
+          </label>
+          <label for="second" class="control">
+            <div class="control-second"></div>
+          </label>
+          <label for="third" class="control">
+            <div class="control-third"></div>
+          </label>
+          <label for="fourth" class="control">
+            <div class="control-fourth"></div>
+          </label>
+          <label for="fifth" class="control">
+            <div class="control-fifth"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
