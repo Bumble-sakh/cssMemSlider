@@ -63,28 +63,27 @@ body {
 .title-fourth,
 .image-fifth,
 .title-fifth {
-  transition: 2s;
   opacity: 0;
 }
 
 .radio.radio-first:checked ~ .slider__images .image-first {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-second:checked ~ .slider__images .image-second {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-third:checked ~ .slider__images .image-third {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-fourth:checked ~ .slider__images .image-fourth {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-fifth:checked ~ .slider__images .image-fifth {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 /* Titles */
@@ -105,23 +104,23 @@ body {
 }
 
 .radio.radio-first:checked ~ .slider__titles .title-first {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-second:checked ~ .slider__titles .title-second {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-third:checked ~ .slider__titles .title-third {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-fourth:checked ~ .slider__titles .title-fourth {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 .radio.radio-fifth:checked ~ .slider__titles .title-fifth {
-  opacity: 1;
+  animation: fade 3s forwards;
 }
 
 /* Controls */
@@ -233,6 +232,16 @@ body {
   border-color: var(--active-color);
 }
 
+/* Animation */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Media */
 
 @media screen and (max-width: 768px) {
